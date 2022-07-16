@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillFacebook } from "react-icons/fa";
 import HeaderSignUp from './HeaderSignUp';
-import { FaceBookIcon } from '../../assets/svg/index';
+import {ReactComponent as FaceBookIcon} from '../../assets/svg/icons8-facebook.svg';
 
 const SignUp = () => {
     return (
@@ -10,17 +10,7 @@ const SignUp = () => {
             <div classNameName='container mx-auto'>
                 <div className="flex flex-col justify-center">
                     <HeaderSignUp/>
-                               {/* <FaceBookIcon/> */}
-                                    {/* <form className="bg-white px-8 pt-6 pb-0 mb-0 flex justify-center">
-                                        <div>
-                                            
-                                            <input className="bg-gray-100 w-64 border-2 border-zinc-200 text-xs
-                                            py-3 px-3 text-gray-400 mb-3 leading-tight focus:outline-none focus:shadow-outline rounded" 
-                                            id="password" type="text" placeholder="Phone Number">
-                                                <div style={{height:"100%",width:"20px",background:"red"}}>hjgjh</div>
-                                            
-                                        </div>
-                                    </form> */}
+                              
                                     <div className='relative flex justify-center'>
                                             <form class="flex justify-center self-center mt-2 bg-gray-200">
                                             <div class="flex items-center border w-[256px] text-gray-700 rounded-[11px]">
@@ -54,7 +44,7 @@ const SignUp = () => {
                             <div className="flex justify-center">
                                 <button className="font-semibold text-indigo-50 w-64 self-center
                                  flex justify-center bg-blue-700 p-2 m-5 text-[10px] rounded"
-                                ><a href='#'>Sign up with facebook</a></button>
+                                ><FaceBookIcon className='fill-white'/>&nbsp;Sign up with facebook</button>
                             </div>
                     </div>
                     </div>  

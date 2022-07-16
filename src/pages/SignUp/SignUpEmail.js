@@ -1,8 +1,11 @@
 import { getDefaultNormalizer } from '@testing-library/react';
 import React from 'react';
-import { AiFillFacebook } from "react-icons/fa";
 import HeaderSignUp from './HeaderSignUp';
+import {ReactComponent as FaceBookIcon} from '../../assets/svg/icons8-facebook.svg';
 const buttonLable = ["@gmail.com","@hotmail.com","@yahoo.com","@outlook.com"];
+
+
+
 const SignUpEmail = () => {
     return (
         <div>
@@ -49,7 +52,7 @@ const SignUpEmail = () => {
                             <div className="flex justify-center">
                                 <button className="font-semibold text-indigo-50 w-64 self-center
                                  flex justify-center bg-blue-700 p-2 m-5 text-[10px] rounded"
-                                ><a href='#'>Sign up with facebook</a></button>
+                                ><FaceBookIcon className='fill-white'/>&nbsp;Sign up with facebook</button>
                             </div>
                     </div>
                     </div>  
