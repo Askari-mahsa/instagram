@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { ProfileData,HeaderProfileData } from './ProfileData';
+import { HeaderProfileData } from './ProfileData';
 const Profile = () => {
-
     const handleIconsClick = (e)=>{
         return console.log("ffff",e)
     }
+    
     return (
         <>
         <div classNameName='container mx-auto'>
@@ -59,14 +59,7 @@ const Profile = () => {
 
                     <div className="border-b-2 flex justify-center"></div>
                 </div>
-                <div className='flex justify-center text-sm space-x-[50px] mt-2 mb-2 text-gray-400'>
-                    {ProfileData.map((item,index)=>{
-                        return   <button onClick={()=>handleIconsClick(item.id)} className='gap-x-10'>{item.icon}</button> 
-                    })}
-                        <button className='gap-x-10'>
-                            <img className="w-2 h-2" src='' alt="img"></img>
-                        </button>
-                </div>
+                
         </div>
            
         </>

@@ -7,12 +7,13 @@ import SignUpEmail from 'pages/SignUp/SignUpEmail';
 import "./assets/styles/App.css"
 import PreLogin from './pages/PreLogin/PreLogin'
 import Profile from "pages/Profile/Profile";
+import Home from "pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-    
-      <Profile/>
+    <Home/>
+      {/* <Profile/> */}
       <BrowserRouter>
                 {/* <Routes>
                     <Route path="/" element={PreLogin}></Route>
