@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import {getProfileDetailService} from "../../Service/CallAPI"
-
-
+import { images } from 'assets/images/images';
 
 const Home = () => {
     const [image,setImage]=useState([]);
@@ -20,13 +19,13 @@ const Home = () => {
                 mahsa
                     
                 <div className="imgslider">
-                    {/* <Slider {...settings}>
-                        {image.map((item) => (
+                    {/* <Slider > */}
+                        {images.map((item) => (
                         <div key={item.id}>
-                        <img className="w-15 h-15 border-2 border-gray-500" src={item.profile_pic_url}  alt={item.alt} />
+                            <img className="w-15 h-15 border-2 border-gray-500" src={item.src}  alt="empty" />
                         </div>
                         ))}
-                    </Slider> */}
+                    {/* </Slider> */}
                 </div>
 
             </div>

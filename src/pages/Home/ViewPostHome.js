@@ -17,18 +17,18 @@ const ViewPostHome = () => {
                     {/* slider */}
                 </div>
 
-                <div id='foooter slider'>
+                <div id='foooter slider' className=''>
 
-                    <div id='like comment save'>
+                    <div id='like comment save' className=''>
+                        <button className=''></button>                                                        
+                    </div>
+                    <div id='like by' className=''>
 
                     </div>
-                    <div id='like by'>
+                    <div id='counter comment'className=''>
 
                     </div>
-                    <div id='counter comment'>
-
-                    </div>
-                    <div id='comment'>
+                    <div id='comment' className=''>
                         
                     </div>
                 </div>
