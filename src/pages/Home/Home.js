@@ -5,26 +5,30 @@ import { images } from 'assets/images/images';
 
 const Home = () => {
     const [image,setImage]=useState([]);
-    const showStories=()=>{
-        getProfileDetailService(image)
-        .then(res=>{
-            setImage(res.data.items)});
-    }
+    // const showStories=()=>{
+    //     getProfileDetailService(image)
+    //     .then(res=>{
+    //         setImage(res.data.items)});
+    // }
     
     return (
         < >
         {/* header bala */}
         <div className="border-b-2 flex justify-center"></div>
             <div id="stories" className='bg-gray-600 w-60 h-30'>
-                mahsa
+                <img src=""> </img>
                     
                 <div className="imgslider">
+                    
                     {/* <Slider > */}
+
                         {images.map((item) => (
+                            
                         <div key={item.id}>
-                            <img className="w-15 h-15 border-2 border-gray-500" src={item.src}  alt="empty" />
+                            <img src="./assets/images/1.jpeg" className="w-15 h-15 border-2 border-gray-500" alt="empty" />
                         </div>
                         ))}
+
                     {/* </Slider> */}
                 </div>
 

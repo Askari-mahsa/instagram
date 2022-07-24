@@ -1,16 +1,16 @@
 export const images = [
     {
         id:1,
-        name:"aks",
+        name:"a",
         src:"/1.jpeg"
     },
     {
         id:2,
-        name:"aks",
+        name:"b",
         src:"/2.jpeg"
     },
     {
         id:3,
-        name:"aks",
+        name:"c",
         src:"/3.jpeg"
     }]
