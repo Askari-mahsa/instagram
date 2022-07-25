@@ -1,16 +1,19 @@
+import first from "../../assets/images/1.jpeg"
+import second from "../../assets/images/2.jpeg"
+import third from "../../assets/images/3.jpeg"
 export const images = [
     {
         id:1,
-        name:"a",
-        src:"/1.jpeg"
+        title:"a",
+        src:first,
     },
     {
         id:2,
-        name:"b",
-        src:"/2.jpeg"
+        title:"b",
+        src:second
     },
     {
         id:3,
-        name:"c",
-        src:"/3.jpeg"
+        title:"c",
+        src:third,
     }]
