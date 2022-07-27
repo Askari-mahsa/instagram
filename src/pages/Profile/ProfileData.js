@@ -1,5 +1,6 @@
 
 import { UserIcon,PlayIcon,MagnifyIcon,SliderIcon,SquareIcon,HeartIcon,PlusIcon,HomeIcon,FlagIcon } from '../../assets/svg/svg';
+import HeaderHome from '../Home/HeaderHome';
 
 export const ProfileData = [
 {
@@ -48,4 +49,13 @@ export const HeaderProfileData =[
     name:"User",
     icon:<UserIcon/>
 },
+]
+
+export const HeaderHome=[
+    {
+        id:1,
+        name:"DirectIcon",
+        icon:<RocketDirect/>
+
+    }
 ]
