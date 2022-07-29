@@ -1,17 +1,25 @@
 import React from 'react';
-import {RocketDirect} from "../../assets/svg/svg"
+import {RocketDirect,DropDownHome} from "../../assets/svg/svg"
 const HeaderHome = () => {
     return (
         <>  
-            <div className='flex justify-between px-4'>
-                <button><img className='w-[120px] ' alt="instagram" src='/i.png'></img></button>
-                <div className="block self-center">
-                    <RocketDirect/>
-                </div>
+        <div className='fixed bg-white' style={{zIndex:1,width:"100%",height:"50px"}}>
+            <div className='flex gap-x-[230px] '>
+                    <button className='flex'>
+                        <img className='w-[120px]' alt="instagram" src='/i.png'></img>
+                        <div className='self-center'>
+                            <DropDownHome/>
+                        </div>
+                    </button>
+
+                    <div className="justify-end self-center">
+                        <RocketDirect/>
+                    </div>
                
             </div>
-
-            <div className="border-b-2 flex justify-center"></div>      
+        </div>
+            
+    
         </>
     );
 };

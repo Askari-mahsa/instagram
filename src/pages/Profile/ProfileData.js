@@ -1,6 +1,6 @@
 
-import { UserIcon,PlayIcon,MagnifyIcon,SliderIcon,SquareIcon,HeartIcon,PlusIcon,HomeIcon,FlagIcon } from '../../assets/svg/svg';
-import HeaderHome from '../Home/HeaderHome';
+import { UserIcon,PlayIcon,MagnifyIcon,SliderIcon,SquareIcon,HeartIcon,PlusIcon,HomeIcon,FlagIcon,DropDownHome,RocketDirect } from '../../assets/svg/svg';
+
 
 export const ProfileData = [
 {
@@ -51,11 +51,15 @@ export const HeaderProfileData =[
 },
 ]
 
-export const HeaderHome=[
+export const HeaderHomeIcon=[
     {
         id:1,
         name:"DirectIcon",
         icon:<RocketDirect/>
-
+    },
+    {
+        id:2,
+        name:"DropDown",
+        icon:<DropDownHome/>
     }
 ]

@@ -16,7 +16,7 @@ import HeaderHome from './pages/Home/HeaderHome';
 function App() {
   return (
     <div className="App">
-      <HeaderHome/>
+      <Home/>
      
     
       {/* <Profile/> */}
