@@ -1,8 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import {getAppLink} from "../../Service/CallAPI"
-import MDBIcon from "";
+import { useNavigate } from "react-router";
+import { MBDIcon } from "assets/svg/svg";
 const Login = () => {
+	const navigate = useNavigate();
+	function transform() {
+		navigate("/profile");
+	}
 	return (
 		<>
 			<div classNameName="container mx-auto">
@@ -20,7 +25,7 @@ const Login = () => {
 
 					<button className="font-semibold text-indigo-50 w-64 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded">
 						<a href="https://www.facebook.com/">
-							<MDBIcon fab icon="facebook" />
+							<MBDIcon />
 							Continue with Facebook
 						</a>
 					</button>
