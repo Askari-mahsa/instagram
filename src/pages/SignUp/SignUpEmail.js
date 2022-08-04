@@ -48,7 +48,7 @@ const SignUpEmail = () => {
 						className="font-semibold text-indigo-50 w-64 
                                 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
 					>
-						<a href="#">Next</a>
+						<a href="https://google.com">Next</a>
 					</button>
 				</div>
 				<div

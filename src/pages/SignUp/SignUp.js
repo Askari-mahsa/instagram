@@ -43,7 +43,7 @@ const SignUp = () => {
 						className="font-semibold text-indigo-50 w-64 
                                 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
 					>
-						<a href="#">Log in</a>
+						<a href="https://google.com">Log in</a>
 					</button>
 				</div>
 				<div

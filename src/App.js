@@ -1,5 +1,5 @@
 import "./assets/styles/App.css";
-import { Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Login from "pages/Login/Login";
 // import SignUp from "pages/SignUp/SignUp";
 // import SignUpEmail from "pages/SignUp/SignUpEmail";
@@ -10,23 +10,23 @@ import PreLogin from "./pages/PreLogin/PreLogin";
 // import Explorer from "./pages/Explore/Explorer";
 // import Notification from "pages/Notification/Notification";
 
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			<Routes>
-				<Route path="" element={<PreLogin />} />
-				{/* <Route path="/signUp" element={<Notification />} />
-				<Route path="/notification" element={<Notification />} />
-				<Route path="/profile" element={<Profile />} />
-				<Route path="/signUpEmail" element={<SignUpEmail />} />
-				<Route path="/signUp" element={<SignUp />} />
-				<Route path="/chat" element={<Chat />} />
-				<Route path="/explorer" element={<Explorer />} />
-				<Route path="/home" element={<Home />} />
-				<Route path="/Login" element={<Login />} /> */}
-			</Routes>
-		</div>
+		<>
+			<PreLogin />
+			{/* <Routes> */}
+			{/* <Route path="/" element={<PreLogin />} />
+			<Route path="/signup" element={<SignUp />}></Route>
+			<Route path="/notification" element={<Notification />}></Route>
+			<Route path="/profile" element={<Profile />}></Route>
+			<Route path="/signupemail" element={<SignUpEmail />}></Route>
+			<Route path="/chat" element={<Chat />}></Route>
+			<Route path="/explorer" element={<Explorer />}></Route>
+			<Route path="/home" element={<Home />}></Route>
+			<Route path="/Login" element={<Login />}></Route> */}
+			{/* </Routes> */}
+		</>
 	);
-}
+};
 
 export default App;

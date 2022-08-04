@@ -1,13 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import {getAppLink} from "../../Service/CallAPI"
-import { useNavigate } from "react-router";
+
 import { MBDIcon } from "assets/svg/svg";
 const Login = () => {
-	const navigate = useNavigate();
-	function transform() {
-		navigate("/profile");
-	}
 	return (
 		<>
 			<div classNameName="container mx-auto">

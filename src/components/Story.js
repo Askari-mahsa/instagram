@@ -1,4 +1,3 @@
-import HeaderHome from "pages/Home/HeaderHome";
 import React from "react";
 
 const Story = () => {
@@ -11,7 +10,7 @@ const Story = () => {
 				>
 					<div className=" relative border-red-800 border-[2px] w-20 h-20 rounded-[100%]">
 						<span className="absolute left-[5px] top-[5px] border-gray-400 border-[1px] w-[65px] h-[65px] rounded-[100%]">
-							<img src="" className="relative"></img>
+							<img alt="img" src="" className="relative"></img>
 							<button className="absolute bg-blue-500 w-4 h-4 text-white rounded-[100%] text-xs top-11 left-12 border-white border-1">
 								+
 							</button>
@@ -29,7 +28,7 @@ const Story = () => {
 				>
 					<div className=" relative border-red-800 border-[2px] w-20 h-20 rounded-[100%]">
 						<span className="absolute left-[5px] top-[5px] border-gray-400 border-[1px] w-[65px] h-[65px] rounded-[100%]">
-							<img src="" className=""></img>
+							<img alt="img" src="" className=""></img>
 						</span>
 					</div>
 					<div>
