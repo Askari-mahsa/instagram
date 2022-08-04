@@ -2,9 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 const PreLogin = () => {
 	const navigate = useNavigate();
-	const enter = () => {
-		navigate("/signup");
+	const SignUpPreLogin = () => {
+		return navigate("/SignUp");
 	};
+	const LoginPreLogin = () => {
+		return navigate("/Login");
+	};
+
 	return (
 		<>
 			<div className="flex flex-col justify-center">
@@ -29,13 +33,16 @@ const PreLogin = () => {
 				</button>
 
 				<div className="flex justify-center">
-					<a className="font-semibold cursor-pointer text-blue-700 text-xs">
+					<a
+						onClick={() => LoginPreLogin()}
+						className="font-semibold cursor-pointer text-blue-700 text-xs"
+					>
 						Log in&nbsp;
 					</a>
 					<p className="text-xs"> or </p>
 					<a
 						className="font-semibold cursor-pointer text-blue-700 text-xs"
-						onClick={() => enter()}
+						onClick={() => SignUpPreLogin()}
 					>
 						&nbsp;Sign Up
 					</a>

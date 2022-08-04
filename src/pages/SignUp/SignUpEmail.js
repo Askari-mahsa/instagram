@@ -12,15 +12,15 @@ const buttonLable = [
 const SignUpEmail = () => {
 	return (
 		<div>
-			<div classNameName="container mx-auto">
+			<div className="container mx-auto">
 				<div className="flex flex-col justify-center">
 					<HeaderSignUp />
 
 					<div className="flex justify-center">
-						<form class="flex justify-center self-center mt-2 bg-gray-200">
-							<div class="flex items-center border w-[256px] text-gray-700 rounded-[11px]">
+						<form className="flex justify-center self-center mt-2 bg-gray-200">
+							<div className="flex items-center border w-[256px] text-gray-700 rounded-[11px]">
 								<input
-									class="block text-[10px] appearance-none bg-transparent p-4 border-none 
+									className="block text-[10px] appearance-none bg-transparent p-4 border-none 
                                                 text-gray-600 mr-3 py-2 px-2 leading-tight focus:outline-none"
 									type="text"
 									placeholder="Email Address"

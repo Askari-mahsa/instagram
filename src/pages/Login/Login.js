@@ -4,7 +4,7 @@ import { MBDIcon } from "assets/svg/svg";
 const Login = () => {
 	return (
 		<>
-			<div classNameName="container mx-auto">
+			<div className="container mx-auto">
 				<div className="flex flex-col justify-center">
 					<div className="text-gray-400 text-center m-10">
 						<div className="fixed inset-x-0 only:top-3">
