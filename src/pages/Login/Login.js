@@ -1,7 +1,12 @@
 import React from "react";
-
 import { MBDIcon } from "assets/svg/svg";
+import { useNavigate } from "react-router";
+
 const Login = () => {
+	const navigate = useNavigate();
+	const transfer = () => {
+		return navigate("/SignUp");
+	};
 	return (
 		<>
 			<div className="container mx-auto">
@@ -18,10 +23,8 @@ const Login = () => {
 					<img className="self-center w-48" alt="instagram" src="/i.png" />
 
 					<button className="font-semibold text-indigo-50 w-64 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded">
-						<a href="https://www.facebook.com/">
-							<MBDIcon />
-							Continue with Facebook
-						</a>
+						<MBDIcon className="flex" />
+						<a href="https://www.facebook.com/">Continue with Facebook</a>
 					</button>
 
 					<div className="flex justify-center">
@@ -60,12 +63,15 @@ const Login = () => {
 
 					<div className="divide-y divide-dashed flex justify-center"></div>
 					<button className="font-semibold text-indigo-50 w-64 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded">
-						<a href="#">Log in</a>
+						<a>Log in</a>
 					</button>
 
 					<div className="flex justify-center">
 						<p className=" text-gray-400 text-sm">Don't have an account?</p>
-						<a className="font-semibold cursor-pointer text-blue-700 text-xs">
+						<a
+							onClick={() => transfer()}
+							className="font-semibold cursor-pointer text-blue-700 text-xs"
+						>
 							&nbsp;Sign Up
 						</a>
 					</div>

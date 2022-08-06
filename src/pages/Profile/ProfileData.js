@@ -13,6 +13,7 @@ import {
 	RocketDirect,
 	CommentIcon,
 	MBDIcon,
+	Return,
 } from "../../assets/svg/svg";
 
 export const ProfileData = [
@@ -92,5 +93,10 @@ export const LoginIcon = [
 		id: 1,
 		name: "LoginIcon",
 		icon: <MBDIcon />,
+	},
+	{
+		id: 2,
+		name: "Return",
+		icon: <Return />,
 	},
 ];

@@ -1,6 +1,9 @@
+import Footer from "pages/Footer/Footer";
 import React from "react";
 
-const HeaderSignUp = () => {
+const HeaderSignUp = (props) => {
+	const { setTab, tab } = props;
+
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
@@ -23,8 +26,11 @@ const HeaderSignUp = () => {
 						<div className="text-sm font-medium text-center text-gray-400 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
 							<ul className="flex flex-wrap -mb-px">
 								<div>
-									<li className="">
+									<li>
 										<a
+											onClick={() => {
+												setTab(!tab);
+											}}
 											href="#"
 											className="text-xs inline-block p-4 rounded-t-lg border-b-2 w-32 
                                             border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
@@ -36,6 +42,9 @@ const HeaderSignUp = () => {
 								<div>
 									<li>
 										<a
+											onClick={() => {
+												setTab(!tab);
+											}}
 											href="#"
 											className="text-xs inline-block p-4 rounded-t-lg 
                                             border-b-2 w-32 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
@@ -49,6 +58,7 @@ const HeaderSignUp = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

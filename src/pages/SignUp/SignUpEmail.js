@@ -1,5 +1,6 @@
 // import { getDefaultNormalizer } from "@testing-library/react";
 import { MBDIcon } from "assets/svg/svg";
+
 import React from "react";
 import HeaderSignUp from "./HeaderSignUp";
 const buttonLable = [
@@ -14,8 +15,6 @@ const SignUpEmail = () => {
 		<div>
 			<div className="container mx-auto">
 				<div className="flex flex-col justify-center">
-					<HeaderSignUp />
-
 					<div className="flex justify-center">
 						<form className="flex justify-center self-center mt-2 bg-gray-200">
 							<div className="flex items-center border w-[256px] text-gray-700 rounded-[11px]">
@@ -48,7 +47,7 @@ const SignUpEmail = () => {
 						className="font-semibold text-indigo-50 w-64 
                                 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
 					>
-						<a href="https://google.com">Next</a>
+						<a>Next</a>
 					</button>
 				</div>
 				<div
