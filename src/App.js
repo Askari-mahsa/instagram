@@ -9,7 +9,8 @@ import Home from "./pages/Home/Home";
 import Chat from "pages/Chat/Chat";
 import Explorer from "./pages/Explore/Explorer";
 import Notification from "pages/Notification/Notification";
-
+import Verify from "pages/SignUp/Verify";
+import SignUpForm from "pages/SignUp/SignUpForm";
 const App = () => {
 	return (
 		<>
@@ -23,6 +24,8 @@ const App = () => {
 				<Route path="/Chat" element={<Chat />}></Route>
 				<Route path="/SignUpEmail" element={<SignUpEmail />}></Route>
 				<Route path="/Profile" element={<Profile />}></Route>
+				<Route path="/Verify" element={<Verify />}></Route>
+				<Route path="/SignUpForm" element={<SignUpForm />}></Route>
 			</Routes>
 		</>
 	);

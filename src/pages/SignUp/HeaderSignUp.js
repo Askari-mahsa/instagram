@@ -1,16 +1,22 @@
+import { Return } from "assets/svg/svg";
 import Footer from "pages/Footer/Footer";
 import React from "react";
 
 const HeaderSignUp = (props) => {
-	const { setTab, tab } = props;
+	const { handlePhoneTab, handleEmailTab } = props;
 
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
 				<div>
-					<h1 className="flex justify-center mt-2 mb-2 font-bold text-xs">
-						Register
-					</h1>
+					<div className="flex">
+						<div className="self-center ml-2">
+							<Return />
+						</div>
+						<div className="justify-center text-center w-[90%]">
+							<h1 className=" mt-2 mb-2 font-bold text-xs">Register</h1>
+						</div>
+					</div>
 					<div className="border-b-2 flex justify-center"></div>
 					<div className="text-gray-400 text-center mb-3">
 						<div>
@@ -28,9 +34,7 @@ const HeaderSignUp = (props) => {
 								<div>
 									<li>
 										<a
-											onClick={() => {
-												setTab(!tab);
-											}}
+											onClick={handlePhoneTab}
 											href="#"
 											className="text-xs inline-block p-4 rounded-t-lg border-b-2 w-32 
                                             border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
@@ -42,9 +46,7 @@ const HeaderSignUp = (props) => {
 								<div>
 									<li>
 										<a
-											onClick={() => {
-												setTab(!tab);
-											}}
+											onClick={handleEmailTab}
 											href="#"
 											className="text-xs inline-block p-4 rounded-t-lg 
                                             border-b-2 w-32 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"

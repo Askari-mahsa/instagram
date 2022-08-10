@@ -4,14 +4,32 @@ import Footer from "pages/Footer/Footer";
 import SignUpEmail from "./SignUpEmail";
 import SignUpWithPhone from "./SignUpWithPhone";
 const SignUp = (props) => {
-	const [tab, setTab] = useState(true);
+	const [tab, setTab] = useState("phone");
+
+	const handlePhoneTab = () => {
+		setTab("phone");
+	};
+
+	const handleEmailTab = () => {
+		setTab("Email");
+	};
+
 	return (
 		<div>
 			<div className="container mx-auto">
 				<div className="flex flex-col justify-center">
-					<HeaderSignUp tab={tab} setTab={setTab} />
+					<HeaderSignUp
+						handlePhoneTab={handlePhoneTab}
+						handleEmailTab={handleEmailTab}
+					/>
 				</div>
-				{!tab ? <SignUpEmail /> : <SignUpWithPhone />}
+				{tab === "phone" ? (
+					<SignUpWithPhone />
+				) : tab === "Email" ? (
+					<SignUpEmail />
+				) : (
+					<span style={{ color: "red", fontSize: "12px" }}>Not Found</span>
+				)}
 			</div>
 
 			<Footer />

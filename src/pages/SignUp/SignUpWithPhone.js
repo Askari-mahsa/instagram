@@ -1,8 +1,11 @@
 import React from "react";
-import HeaderSignUp from "./HeaderSignUp";
-import Footer from "pages/Footer/Footer";
-import SignUpEmail from "./SignUpEmail";
+import { useNavigate } from "react-router";
+
 const SignUpWithPhone = (props) => {
+	const navigate = useNavigate();
+	const VerifyCode = () => {
+		return navigate("/Verify");
+	};
 	const {} = props;
 	return (
 		<div>
@@ -42,7 +45,7 @@ const SignUpWithPhone = (props) => {
 						className="font-semibold text-indigo-50 w-64 
                                 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
 					>
-						<a href="https://google.com">Log in</a>
+						<a onClick={() => VerifyCode()}>Log in</a>
 					</button>
 				</div>
 			</div>
