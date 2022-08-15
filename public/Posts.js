@@ -9,20 +9,21 @@ const Posts = () => {
       };
 
     return (
-        <div>
-            <div id="stories" className=' w-60 h-30'>
+        <>
+            <div>
+            <div id="stories" className='flex w-[50%] h-30'>
                
                {/* <img src=""></img>
                    
                <div className="">
                    
                         */}
-                       <Slider className='flex'>
+                       <Slider className='w-[50%]'>
                             {/* {images.map((item) => (
                                 
                                 <div key={item.id}> */}
                                 <div>
-                                    <img className="w-10 h-10 border-2 border-gray-500" src="i.png" alt="empty" ></img>
+                                <img className="w-10 h-10 border-2 border-gray-500" src="i.png" alt="empty" ></img>
                                 </div>
                                 <div>
                                  <img className="w-15 h-15 border-2 border-gray-500" src="i.png" alt="empty" ></img>
@@ -39,8 +40,9 @@ const Posts = () => {
                      
                </div>
 
+            </div>
            {/* </div> */}
-        </div>
+        </>
     );
 };
 

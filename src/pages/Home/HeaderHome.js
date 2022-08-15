@@ -3,8 +3,8 @@ import {RocketDirect,DropDownHome} from "../../assets/svg/svg"
 const HeaderHome = () => {
     return (
         <>  
-        <div className='fixed bg-white' style={{zIndex:1,width:"100%",height:"60px"}}>
-            <div className='flex gap-x-[230px] '>
+        <div className='fixed bg-white' style={{zIndex:1,width:"100%"}}>
+            <div className='flex gap-x-[230px] justify-center'>
                     <button className='flex'>
                         <img className='w-[120px] mt-2 ml-2' alt="instagram" src='/i.png'></img>
                         <div className='self-center'>

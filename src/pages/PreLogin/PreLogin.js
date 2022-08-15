@@ -25,12 +25,14 @@ const PreLogin = () => {
 				<p className="text-gray-400 text-center text-xs">
 					Sign up to see photos and videos from your friends.
 				</p>
-
-				<button className="text-indigo-50 flex justify-center bg-blue-700 p-2 m-10 text-xs">
+				<div className="flex self-center">
+				<button className="text-indigo-50 w-64 flex justify-center bg-blue-700 p-2 m-10 text-xs">
 					<a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en&gl=US">
 						Get the instagram app
 					</a>
 				</button>
+				</div>
+				
 
 				<div className="flex justify-center">
 					<a
@@ -50,9 +52,9 @@ const PreLogin = () => {
 
 				<div
 					className="flex flex-col fixed
-             inset-x-0 only:
-             bottom-0
-             p-4"
+						inset-x-0 only:
+						bottom-0
+						p-4"
 				>
 					<p className="text-gray-400 flex justify-center text-xs">from</p>
 
