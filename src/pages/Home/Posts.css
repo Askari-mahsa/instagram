@@ -6,11 +6,11 @@
     /* height: 100vh; */
   }
 #slider{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
-  width: 25%;
+  height:270px;
+  width: 415px;
   margin: 0 2px;
   
 }

@@ -12,7 +12,7 @@ const HeaderHome = () => {
                         </div>
                     </button>
 
-                    <div className="justify-end self-center">
+                    <div className="justify-end self-center mr-4">
                         <RocketDirect/>
                     </div>
                

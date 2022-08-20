@@ -1,7 +1,7 @@
 import React from "react";
 import translate from "translate";
 import "./Posts.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import {
 	DotsMenu,
@@ -10,13 +10,16 @@ import {
 	CommentIcon,
 	FlagIcon,
 } from "../../assets/svg/svg";
-translate.engine = "google"; // Or "yandex", "libre", "deepl"
+translate.engine = "google"; 
 translate.key = process.env.GOOGLE_KEY;
+const like=()=>{
+	style={backgroundColor: 'red'}
+}
 const Posts = () => {
 	return (
 		<>
 			<div>
-				<div className="flex">
+				<div className="flex gap-[280px]">
 					<div className="flex mb-2 ml-4 ">
 						<div className=" relative border-red-800 border-[2px] w-9 h-9 rounded-[100%]">
 							<span className="absolute left-[3px] top-[2.5px] border-gray-400 border-[1px] w-[27px] h-[27px] rounded-[100%]"></span>
@@ -46,7 +49,7 @@ const Posts = () => {
 			<div className="flex gap-[265px]">
 				<div className="flex">
 					<div className="ml-4">
-						<HeartIcon />
+						<HeartIcon style={`backgroundColor: 'lime'`}/>
 					</div>
 					<div className="ml-4">
 						<CommentIcon />

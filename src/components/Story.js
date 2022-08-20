@@ -5,7 +5,7 @@ const Story = () => {
 		<>
 			<div className="container flex justify-center">
 				<div
-					className="flex-col mt-[15%]"
+					className="flex-col ml-4 mt-[15%]"
 					style={{ textAlignLast: "center" }}
 				>
 					<div className="relative border-red-800 border-[2px] w-20 h-20 rounded-[100%]">

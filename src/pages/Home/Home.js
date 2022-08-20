@@ -9,7 +9,7 @@ import Posts from "./Posts";
 const Home = () => {
 	return (
 		<div className="w-[100%]">
-			<div className="w-[50%]">
+			<div className="w-[50%] bg-red-100">
 				<HeaderHome />
 			</div>
 			<div>
