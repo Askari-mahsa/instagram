@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import translate from "translate";
 import "./Posts.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -9,16 +9,22 @@ import {
 	RocketDirect,
 	CommentIcon,
 	FlagIcon,
+	HeartIconLiked,
 } from "../../assets/svg/svg";
 translate.engine = "google"; 
 translate.key = process.env.GOOGLE_KEY;
-const like=()=>{
-	style={backgroundColor: 'red'}
-}
+
+
 const Posts = () => {
+	const [dislike,setDisLike]=useState(true)
+	const [like,setLike]=useState(false)
+	const color=()=>{
+		setLike(true);
+		setDisLike(false);
+	}
 	return (
-		<>
-			<div>
+		<div className="w-[100%] justify-center">
+			<div className="">
 				<div className="flex gap-[280px]">
 					<div className="flex mb-2 ml-4 ">
 						<div className=" relative border-red-800 border-[2px] w-9 h-9 rounded-[100%]">
@@ -32,7 +38,7 @@ const Posts = () => {
 				</div>
 			</div>
 
-			<div className="App">
+			<div className="App w-[100%]">
 				<Carousel>
 					<div id="slider">
 						<img alt="1" src="1.jpeg"></img>
@@ -48,8 +54,10 @@ const Posts = () => {
 
 			<div className="flex gap-[265px]">
 				<div className="flex">
-					<div className="ml-4">
-						<HeartIcon style={`backgroundColor: 'lime'`}/>
+					<div className="ml-4" onClick={color}>
+						
+							 <HeartIcon/>
+						
 					</div>
 					<div className="ml-4">
 						<CommentIcon />
@@ -81,9 +89,9 @@ const Posts = () => {
 			</div>
 			<div>
 				<p className="text-[10px] ml-4 mt-2 text-gray-500">time of get post</p>
-				<a>See translate</a>
+				<a className="ml-4">See translate</a>
 			</div>
-		</>
+		</div>
 	);
 };
 

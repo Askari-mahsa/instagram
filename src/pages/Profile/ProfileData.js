@@ -14,6 +14,7 @@ import {
 	CommentIcon,
 	MBDIcon,
 	Return,
+	HeartIconLiked
 } from "../../assets/svg/svg";
 
 export const ProfileData = [
@@ -36,6 +37,11 @@ export const ProfileData = [
 		id: 4,
 		name: "Search",
 		icon: <HeartIcon />,
+	},
+	{
+		id: 5,
+		name: "likedhearth",
+		icon: <HeartIconLiked />,
 	},
 ];
 export const HeaderProfileData = [

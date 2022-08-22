@@ -8,16 +8,17 @@ import Story from "components/Story";
 import Posts from "./Posts";
 const Home = () => {
 	return (
-		<div className="w-[100%]">
-			<div className="w-[50%] bg-red-100">
+		<div className="flex flex-col w-[100%]">
+			<div className="self-center w-[420px] bg-red-700">
 				<HeaderHome />
-			</div>
-			<div>
+
 				<Story />
-				<div className="border-b-2 flex justify-center w-[400px] mb-2"></div>
+				<div className="border-b-2 w-[420px] mb-2"></div>
+
 				<Posts />
+
+				<div className="footer"></div>
 			</div>
-			<div className="footer"></div>
 		</div>
 	);
 };
