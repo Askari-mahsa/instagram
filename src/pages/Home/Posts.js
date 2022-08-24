@@ -3,6 +3,7 @@ import translate from "translate";
 import "./Posts.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import Slider from "./Slider";
 import {
 	DotsMenu,
 	HeartIcon,
@@ -11,24 +12,25 @@ import {
 	FlagIcon,
 	HeartIconLiked,
 } from "../../assets/svg/svg";
-translate.engine = "google"; 
+translate.engine = "google";
 translate.key = process.env.GOOGLE_KEY;
 
-
 const Posts = () => {
-	const [dislike,setDisLike]=useState(true)
-	const [like,setLike]=useState(false)
-	const color=()=>{
+	const [dislike, setDisLike] = useState(true);
+	const [like, setLike] = useState(false);
+	const color = () => {
 		setLike(true);
 		setDisLike(false);
-	}
+	};
 	return (
 		<div className="w-[100%] justify-center">
 			<div className="">
 				<div className="flex gap-[280px]">
 					<div className="flex mb-2 ml-4 ">
 						<div className=" relative border-red-800 border-[2px] w-9 h-9 rounded-[100%]">
-							<span className="absolute left-[3px] top-[2.5px] border-gray-400 border-[1px] w-[27px] h-[27px] rounded-[100%]"></span>
+							<span className="absolute left-[3px] top-[2.5px] border-gray-400 border-[1px] w-[27px] h-[27px] rounded-[100%]">
+								<img alt="img" src="5.jpeg" className="rounded-[100%]"></img>
+							</span>
 						</div>
 						<p className="ml-1 text-xs self-center">username</p>
 					</div>
@@ -39,7 +41,7 @@ const Posts = () => {
 			</div>
 
 			<div className="App w-[100%]">
-				<Carousel>
+				{/* <Carousel>
 					<div id="slider">
 						<img alt="1" src="1.jpeg"></img>
 					</div>
@@ -49,15 +51,14 @@ const Posts = () => {
 					<div id="slider">
 						<img alt="3" src="3.jpeg"></img>
 					</div>
-				</Carousel>
+				</Carousel> */}
+				<Slider />
 			</div>
 
 			<div className="flex gap-[265px]">
 				<div className="flex">
 					<div className="ml-4" onClick={color}>
-						
-							 <HeartIcon/>
-						
+						<HeartIcon />
 					</div>
 					<div className="ml-4">
 						<CommentIcon />
@@ -74,7 +75,7 @@ const Posts = () => {
 			</div>
 
 			<div className="ml-4">
-				<p>like counter</p>
+				<p className="text-sm">Like counter</p>
 				<div>username</div>
 				<p>discripion</p>
 				<p className="text-xs text-gray-500">view all 31 comment</p>

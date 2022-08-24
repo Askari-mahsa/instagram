@@ -20,7 +20,11 @@ const SignUpWithPhone = (props) => {
 								>
 									IR +98
 								</button>
-								<div className="absoulate text-gray-400">|</div>
+								{/* <div className="flex flex-col w-[100%]">
+			<div className="self-center w-[420px]"></div> */}
+								<div className="absoulate text-gray-400 border-b-2 w-32 align-baseline self-center">
+									|
+								</div>
 								<input
 									className="text-[10px] appearance-none bg-transparent p-4 border-none 
                                             text-gray-700 mr-3 py-2 px-2 leading-tight focus:outline-none"

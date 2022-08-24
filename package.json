@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "carousel-js": "^4.0.0",
+    "keen-slider": "^6.7.0",
     "navigate": "^0.3.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

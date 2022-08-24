@@ -9,7 +9,7 @@ import Posts from "./Posts";
 const Home = () => {
 	return (
 		<div className="flex flex-col w-[100%]">
-			<div className="self-center w-[420px] bg-red-700">
+			<div className="self-center w-[420px]">
 				<HeaderHome />
 
 				<Story />

@@ -13,11 +13,12 @@ const HeaderSignUp = (props) => {
 						<div className="self-center ml-2">
 							<Return />
 						</div>
-						<div className="justify-center text-center w-[90%]">
+						<div className="justify-center text-center w-[100%]">
 							<h1 className=" mt-2 mb-2 font-bold text-xs">Register</h1>
 						</div>
 					</div>
-					<div className="border-b-2 flex justify-center"></div>
+
+					<div className="border-b-2 ml-[42%] w-64"></div>
 					<div className="text-gray-400 text-center mb-3">
 						<div>
 							<select className="bg-indigo-0 bg-[#ffffff] text-xs mb-8">
