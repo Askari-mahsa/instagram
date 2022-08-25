@@ -46,7 +46,7 @@ const SignUpWithPhone = (props) => {
 					<div className=" flex justify-center divide-y divide-dashed"></div>
 					<button
 						disabled={true}
-						className="font-semibold text-indigo-50 w-64 
+						className="font-semibold cursor-pointer text-indigo-50 w-64 
                                 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
 					>
 						<a onClick={() => VerifyCode()}>Log in</a>

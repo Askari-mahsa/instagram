@@ -1,5 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router";
 const Verify = () => {
+	const navigate = useNavigate();
+	const ChangeNumber = () => {
+		return navigate("/");
+	};
+	const Next = () => {
+		// const navigate = useNavigate();
+		return navigate("/Home");
+	};
 	return (
 		<div className="container mx-auto">
 			<div className="flex flex-col text-center mt-4">
@@ -8,9 +17,16 @@ const Verify = () => {
 				</h3>
 				<h6 className="self-center text-xs text-gray-500 w-[260px]">
 					enter the code we sent to +989032653459 {}
-					<a className="text-blue-700 font-bold text-xs">Change Number</a>
+					<a
+						className="text-blue-700 font-bold text-xs cursor-pointer"
+						onClick={ChangeNumber}
+					>
+						Change Number
+					</a>
 					&nbsp;or&nbsp;
-					<a className="text-blue-700 font-bold text-xs">Resend SMS</a>
+					<a className="text-blue-700 font-bold text-xs cursor-pointer">
+						Resend SMS
+					</a>
 				</h6>
 			</div>
 			<div className="flex flex-col justify-center">
@@ -33,10 +49,10 @@ const Verify = () => {
 				<div className=" flex justify-center divide-y divide-dashed"></div>
 				<button
 					disabled={true}
-					className="font-semibold text-indigo-50 w-64 
+					className="cursor-pointer font-semibold text-indigo-50 w-64 
                                 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
 				>
-					<a>Next</a>
+					<a onClick={Next}>Next</a>
 				</button>
 			</div>
 			<div

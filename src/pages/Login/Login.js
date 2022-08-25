@@ -90,7 +90,7 @@ const Login = () => {
 					<div className="divide-y divide-dashed flex justify-center"></div>
 					<button
 						onClick={handleSubmitButton}
-						className="font-semibold text-indigo-50 w-64 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
+						className="cursor-pointer font-semibold text-indigo-50 w-64 self-center flex justify-center bg-blue-700 p-2 m-5 text-xs rounded"
 					>
 						Log in
 					</button>
