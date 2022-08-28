@@ -2,6 +2,7 @@ import React from "react";
 import { MBDIcon } from "assets/svg/svg";
 import { useNavigate } from "react-router";
 import { useState } from "react";
+import { ForgetPasswod } from "pages/Profile/ProfileData";
 const Login = () => {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
@@ -24,6 +25,10 @@ const Login = () => {
 	const navigate = useNavigate();
 	const transfer = () => {
 		return navigate("/SignUp");
+	};
+	const Froget = useNavigate();
+	const ForgetPasswod = () => {
+		return Froget("/Forgetpassword");
 	};
 
 	return (
@@ -82,7 +87,10 @@ const Login = () => {
 					</div>
 					<div></div>
 					<div className="flex justify-center">
-						<a className="cursor-pointer text-blue-700 text-xs mb-5">
+						<a
+							onClick={ForgetPasswod}
+							className="cursor-pointer text-blue-700 text-xs mb-5"
+						>
 							Froget password?
 						</a>
 					</div>

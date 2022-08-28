@@ -6,7 +6,7 @@ const SignUpForm = () => {
 			<div className="container mx-auto">
 				<div className="flex flex-col text-center">
 					<h3 className="self-center text-xs text-gray-500 mt-2 mb-2">
-						Addyour name so friends can find you.
+						Add your name so friends can find you.
 					</h3>
 				</div>
 				<div className="flex flex-col justify-center">
@@ -14,21 +14,39 @@ const SignUpForm = () => {
 						<form className="flex flex-col justify-center self-center">
 							<div className="flex items-center border w-[256px] text-gray-700 mb-3 rounded-[11px]">
 								<input
-									className="text-[10px] appearance-none bg-transparent bg-slate-100 w-[300px] border-gray-500 border-none 
+									className="text-[10px] appearance-none bg-transparent bg-slate-100 mr-auto rounded-[9px] w-[254px] border-gray-500 border-none 
+                                                text-gray-600 mr-3 py-2 px-2 leading-tight focus:outline-none"
+									type="text"
+									placeholder="Mobile Number or Email"
+									aria-label="Mobile Number or Email"
+								/>
+							</div>
+							<div className="flex items-center border w-[256px] text-gray-700 mb-3 rounded-[9px]">
+								<input
+									className="text-[10px] appearance-none bg-transparent bg-slate-100 mr-auto rounded-[9px] w-[254px] border-gray-500 border-none 
                                                 text-gray-600 mr-3 py-2 px-2 leading-tight focus:outline-none"
 									type="text"
 									placeholder="Full Name"
 									aria-label="Full name"
 								/>
 							</div>
+							<div className="flex items-center border w-[256px] text-gray-700 mb-3 rounded-[9px]">
+								<input
+									className="text-[10px] appearance-none bg-transparent bg-slate-100 w-[254px] mr-auto rounded-[9px] border-gray-500 border-none 
+                                                text-gray-600 mr-3 py-2 px-2 leading-tight focus:outline-none"
+									type="text"
+									placeholder="Username"
+									aria-label="Username"
+								/>
+							</div>
 
 							<div className="flex items-center border w-[256px] text-gray-700 rounded-[11px]">
 								<input
-									className="text-[10px] appearance-none bg-transparent border bg-slate-100 w-[300px] via-slate-400 border-none 
+									className="text-[10px] appearance-none bg-transparent border bg-slate-100 w-[254px] mr-auto rounded-[9px] via-slate-400 border-none 
                                                 text-gray-600 mr-3 py-2 px-2 leading-tight focus:outline-none"
 									type="password"
 									placeholder="Password"
-									aria-label="Full name"
+									aria-label="Password"
 								/>
 							</div>
 						</form>
