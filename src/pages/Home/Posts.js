@@ -41,17 +41,6 @@ const Posts = () => {
 			</div>
 
 			<div className="App w-[100%]">
-				{/* <Carousel>
-					<div id="slider">
-						<img alt="1" src="1.jpeg"></img>
-					</div>
-					<div id="slider">
-						<img alt="2" src="2.jpeg"></img>
-					</div>
-					<div id="slider">
-						<img alt="3" src="3.jpeg"></img>
-					</div>
-				</Carousel> */}
 				<Slider />
 			</div>
 
@@ -82,7 +71,9 @@ const Posts = () => {
 			</div>
 			<div className="flex ml-4 mt-4">
 				<div className="relative border-red-800 border-[2px] w-9 h-9 rounded-[100%]">
-					<span className="absolute left-[3px] top-[2.5px] border-gray-400 border-[1px] w-[27px] h-[27px] rounded-[100%]"></span>
+					<span className="absolute left-[3px] top-[2.5px] border-gray-400 border-[1px] w-[27px] h-[27px] rounded-[100%]">
+						<img alt="img" src="5.jpeg" className="rounded-[100%]"></img>
+					</span>
 				</div>
 				<div className="visible:border-white self-center ml-2">
 					<input id="comment" placeholder="Add a comment..." />

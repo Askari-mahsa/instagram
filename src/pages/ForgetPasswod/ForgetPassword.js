@@ -1,10 +1,14 @@
 import React from "react";
-import { Lock } from "../../assets/svg/svg";
+import { Lock, Return } from "../../assets/svg/svg";
 import { useNavigate } from "react-router";
 const ForgetPassword = () => {
 	const navigate = useNavigate();
 	const Back = () => {
 		return navigate("/Login");
+	};
+	const newaccount = useNavigate();
+	const NewAccount = () => {
+		return newaccount("/SignUpForm");
 	};
 	return (
 		<>
@@ -60,7 +64,10 @@ const ForgetPassword = () => {
 						<p className="text-xs text-gray-400">&nbsp;OR&nbsp;</p>
 						<div className="border-b-2 w-[110px] self-center"></div>
 					</div>
-					<a className=" cursor-pointer font-semibold text-sm mt-2 self-center">
+					<a
+						onClick={NewAccount}
+						className=" cursor-pointer font-semibold text-sm mt-2 self-center"
+					>
 						Create New Account
 					</a>
 				</div>

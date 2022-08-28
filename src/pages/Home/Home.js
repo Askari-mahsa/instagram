@@ -1,6 +1,4 @@
 import React from "react";
-// import { useState } from 'react';
-// import {getProfileDetailService} from "../../Service/CallAPI"
 
 import "./Home.css";
 import HeaderHome from "./HeaderHome";
