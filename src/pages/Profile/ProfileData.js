@@ -14,7 +14,8 @@ import {
 	CommentIcon,
 	MBDIcon,
 	Return,
-	HeartIconLiked
+	HeartIconLiked,
+	Lock,
 } from "../../assets/svg/svg";
 
 export const ProfileData = [
@@ -104,5 +105,12 @@ export const LoginIcon = [
 		id: 2,
 		name: "Return",
 		icon: <Return />,
+	},
+];
+export const ForgetPasswod = [
+	{
+		id: 1,
+		name: "Lock",
+		icon: <Lock />,
 	},
 ];

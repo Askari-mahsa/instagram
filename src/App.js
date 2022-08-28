@@ -11,6 +11,7 @@ import Explorer from "./pages/Explore/Explorer";
 import Notification from "pages/Notification/Notification";
 import Verify from "pages/SignUp/Verify";
 import SignUpForm from "pages/SignUp/SignUpForm";
+import ForgetPassword from "pages/ForgetPasswod/ForgetPassword";
 const App = () => {
 	return (
 		<>
@@ -26,6 +27,7 @@ const App = () => {
 				<Route path="/Profile" element={<Profile />}></Route>
 				<Route path="/Verify" element={<Verify />}></Route>
 				<Route path="/SignUpForm" element={<SignUpForm />}></Route>
+				<Route path="/ForgetPassword" element={<ForgetPassword />}></Route>
 			</Routes>
 		</>
 	);
