@@ -3,6 +3,7 @@ import translate from "translate";
 import "./Posts.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+// import heart from "./Heart.png";
 import Slider from "./Slider";
 import {
 	DotsMenu,
@@ -10,18 +11,22 @@ import {
 	RocketDirect,
 	CommentIcon,
 	FlagIcon,
+	FlagIconSelected,
 	HeartIconLiked,
 } from "../../assets/svg/svg";
 translate.engine = "google";
 translate.key = process.env.GOOGLE_KEY;
 
 const Posts = () => {
-	const [dislike, setDisLike] = useState(true);
 	const [like, setLike] = useState(false);
-	const color = () => {
-		setLike(true);
-		setDisLike(false);
+	const colorhandler = () => {
+		setLike(!like);
 	};
+	const [select, setSelect] = useState(false);
+	const selecthandler = () => {
+		setSelect(!select);
+	};
+
 	return (
 		<div className="w-[100%] justify-center">
 			<div className="">
@@ -46,8 +51,8 @@ const Posts = () => {
 
 			<div className="flex gap-[265px]">
 				<div className="flex">
-					<div className="ml-4" onClick={color}>
-						<HeartIcon />
+					<div className="ml-4" onClick={() => colorhandler()}>
+						{like ? <HeartIconLiked /> : <HeartIcon />}
 					</div>
 					<div className="ml-4">
 						<CommentIcon />
@@ -56,10 +61,8 @@ const Posts = () => {
 						<RocketDirect />
 					</div>
 				</div>
-				<div>
-					<div className="">
-						<FlagIcon />
-					</div>
+				<div onClick={() => selecthandler()}>
+					<div className="">{select ? <FlagIconSelected /> : <FlagIcon />}</div>
 				</div>
 			</div>
 
@@ -76,7 +79,11 @@ const Posts = () => {
 					</span>
 				</div>
 				<div className="visible:border-white self-center ml-2">
-					<input id="comment" placeholder="Add a comment..." />
+					<input
+						className="focus:outline-none focus-visible:none"
+						id="comment"
+						placeholder="Add a comment..."
+					/>
 				</div>
 			</div>
 			<div>

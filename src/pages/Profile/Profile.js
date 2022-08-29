@@ -8,16 +8,16 @@ const Profile = () => {
 
 	return (
 		<>
-			<div className="container mx-auto">
-				<div className="contents w-1/2">
+			<div className="container mx-auto w-[410px]">
+				<div className="contents">
 					<div className="flex">
 						<div className="flex rounded-[100%] ml-5 mr-5 bg-red-700 mt-5">
-							<img src="" className="w-20 h-20 rounded-[100%]"></img>
+							<img src="5.jpeg" className="w-20 h-20 rounded-[100%]"></img>
 						</div>
 
 						<div className="flex flex-col self-center pl-10">
-							<div className="text-md">
-								<p>username</p>
+							<div className="text-3xl">
+								<p className="mb-2">Mahsa.Askari</p>
 							</div>
 
 							<div className="">
@@ -29,20 +29,25 @@ const Profile = () => {
 					</div>
 
 					<div className="">
-						<p className="ml-5 mt-4 mb-5 text-xs">Bio</p>
+						<p className="ml-5 mt-4 mb-5 text-xs">
+							Mahsa Askari
+							<br />
+							Born Kerman
+							<br /> Programmer
+						</p>
 					</div>
 					<div className="border-b-2 flex justify-center"></div>
 
-					<div className="flex justify-center space-x-10 mt-2 mb-2">
-						<div className="text-xs">
+					<div className="flex justify-center space-x-16 mt-2 mb-2">
+						<div className="text-xs cursor-pointer">
 							<p className="text-center">3</p>
 							<p className="text-gray-600">post</p>
 						</div>
-						<div className="text-xs">
+						<div className="text-xs cursor-pointer">
 							<p className="text-center">12</p>
 							<p className="text-gray-600">followers</p>
 						</div>
-						<div className="text-xs">
+						<div className="text-xs cursor-pointer">
 							<p className="text-center">90</p>
 							<p className="text-gray-600">following</p>
 						</div>

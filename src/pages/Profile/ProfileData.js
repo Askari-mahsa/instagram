@@ -9,6 +9,7 @@ import {
 	PlusIcon,
 	HomeIcon,
 	FlagIcon,
+	FlagIconSelected,
 	DropDownHome,
 	RocketDirect,
 	CommentIcon,
@@ -70,6 +71,13 @@ export const HeaderProfileData = [
 		id: 5,
 		name: "User",
 		icon: <UserIcon />,
+	},
+];
+export const HandleHomeIcon = [
+	{
+		id: 1,
+		name: "SaveSelected",
+		icon: <FlagIconSelected />,
 	},
 ];
 
