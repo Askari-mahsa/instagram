@@ -1,35 +1,74 @@
 import "./assets/styles/App.css";
-import { Routes, Route } from "react-router-dom";
-import Login from "pages/Login/Login";
-import SignUp from "pages/SignUp/SignUp";
-import SignUpEmail from "pages/SignUp/SignUpEmail";
-import PreLogin from "./pages/PreLogin/PreLogin";
-import Profile from "pages/Profile/Profile";
-import Home from "./pages/Home/Home";
-import Chat from "pages/Chat/Chat";
-import Explorer from "./pages/Explore/Explorer";
-import Notification from "pages/Notification/Notification";
-import Verify from "pages/SignUp/Verify";
-import SignUpForm from "pages/SignUp/SignUpForm";
-import ForgetPassword from "pages/ForgetPasswod/ForgetPassword";
+import { Route, Routes } from "react-router";
+import { Exit } from "Pages/Exit/Exit";
+import { Order } from "Pages/Order/Order";
+import { Saved } from "Pages/Saved/Saved";
+import { PasswordManager } from "Pages/PasswordManager/PasswordManager";
+import { Report } from "Pages/Report/Report";
+import { ConnectedDevises } from "Pages/ConnectedDevises/ConnectedDevises";
+import { EditInfo } from "Pages/EditInfo/EditInfo";
+import { HojrehManager } from "Pages/HojrehManager/HojrehManager";
+import { Inbox } from "Pages/Inbox/Inbox";
+import { Header } from "Components/Header/Header";
+import { ActivitySideBar } from "Components/ActivitySideBar/ActivitySideBar";
+import { Component } from "react";
+import { Body } from "Components/Ui/layout/Body";
+export const routes = [
+	{
+		element: ActivitySideBar,
+		path: "/ActivitySideBar",
+	},
+	{
+		element: Inbox,
+		path: "/Inbox",
+	},
+	{
+		element: HojrehManager,
+		path: "/HojrehManager",
+	},
+	{
+		element: Report,
+		path: "/Report",
+	},
+	{
+		element: Body,
+		path: "/",
+	},
+	{
+		element: Exit,
+		path: "/Exit",
+	},
+	{
+		element: Order,
+		path: "/Order",
+	},
+	{
+		element: Saved,
+		path: "/Saved",
+	},
+	{
+		element: PasswordManager,
+		path: "/PasswordManager",
+	},
+	{
+		element: Report,
+		path: "/Report",
+	},
+	{
+		element: ConnectedDevises,
+		path: "/ConnectedDevises",
+	},
+	{
+		element: EditInfo,
+		path: "/EditInfo",
+	},
+];
+
 const App = () => {
 	return (
-		<>
-			<Routes>
-				<Route path="/" element={<PreLogin />}></Route>
-				<Route path="/Login" element={<Login />}></Route>
-				<Route path="/SignUp" element={<SignUp />}></Route>
-				<Route path="/Home" element={<Home />}></Route>
-				<Route path="/Explorer" element={<Explorer />}></Route>
-				<Route path="/Notification" element={<Notification />}></Route>
-				<Route path="/Chat" element={<Chat />}></Route>
-				<Route path="/SignUpEmail" element={<SignUpEmail />}></Route>
-				<Route path="/Profile" element={<Profile />}></Route>
-				<Route path="/Verify" element={<Verify />}></Route>
-				<Route path="/SignUpForm" element={<SignUpForm />}></Route>
-				<Route path="/ForgetPassword" element={<ForgetPassword />}></Route>
-			</Routes>
-		</>
+		<div>
+			<Body />
+		</div>
 	);
 };
 

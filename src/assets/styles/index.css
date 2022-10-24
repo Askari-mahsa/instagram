@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .btn-primary {
+      @apply py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+   .spacing{
+    @apply lg:mx-[64px] xs:mx-[24px]
+    
+   }
+    /* html{
+    font-family:'YekanBakh-Fat'
+   } */
+   .Box{
+    @apply border border-gray-300 rounded-[8px]
+   }
+   .BigBox{
+    @apply border border-gray-300 rounded-[8px] lg:w-[437px] lg:h-[383px] xs:w-[524px] xs:h-[240px]
+   }
+   .SmallBox{
+    @apply border border-gray-300 rounded-[8px] lg:w-[437px] lg:h-[181px] xs:w-[524px] xs:h-[142px] 
+   }
+   .SmallTitle{
+    @apply text-right text-[12px]
+   }
+   .MidTitle{
+    @apply text-right text-[14px]
+   }
+   .BigTitle{
+    @apply text-right text-[16px]
+   }
+   .Button{
+    @apply px-[24px] mt-4 ml-4 border border-gray-600 h-[40px] text-blue-700 rounded-full
+   }
+   .SummaryOrders{
+    @apply  flex self-center mr-4 
+   }
+   .SummaryOrdersImg{
+    @apply h-[29.75px] w-[29.75px] 
+   }
+
+  }
