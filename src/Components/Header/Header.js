@@ -1,5 +1,5 @@
 import React from "react";
-import { MagnifySearch } from "./SVGIconSearch/SVGIconSearch";
+// import { MagnifySearch } from "./SVGIconSearch/SVGIconSearch";
 import "assets/styles/index.css";
 
 export const Header = () => {
@@ -13,13 +13,9 @@ export const Header = () => {
 				<div id="2-1" className="self-center">
 					<div id="basket/profile" className="flex self-center spacing">
 						<div id="profile/flag" className="">
-							<button>
-								<MagnifySearch />
-							</button>
+							<button>1</button>
 						</div>
-						<button className="">
-							<MagnifySearch />
-						</button>
+						<button className="">2</button>
 					</div>
 				</div>
 				<div className="flex">
@@ -33,9 +29,7 @@ export const Header = () => {
 						<span
 							id="magnify"
 							className="self-center lg:h-[42px] xs:h-[32px] bg-gray-100"
-						>
-							<MagnifySearch />
-						</span>
+						></span>
 					</div>
 					<img
 						src="./logonakhl.png"

@@ -13,61 +13,63 @@ import { Header } from "Components/Header/Header";
 import { ActivitySideBar } from "Components/ActivitySideBar/ActivitySideBar";
 import { Component } from "react";
 import { Body } from "Components/Ui/layout/Body";
-export const routes = [
-	{
-		element: ActivitySideBar,
-		path: "/ActivitySideBar",
-	},
-	{
-		element: Inbox,
-		path: "/Inbox",
-	},
-	{
-		element: HojrehManager,
-		path: "/HojrehManager",
-	},
-	{
-		element: Report,
-		path: "/Report",
-	},
-	{
-		element: Body,
-		path: "/",
-	},
-	{
-		element: Exit,
-		path: "/Exit",
-	},
-	{
-		element: Order,
-		path: "/Order",
-	},
-	{
-		element: Saved,
-		path: "/Saved",
-	},
-	{
-		element: PasswordManager,
-		path: "/PasswordManager",
-	},
-	{
-		element: Report,
-		path: "/Report",
-	},
-	{
-		element: ConnectedDevises,
-		path: "/ConnectedDevises",
-	},
-	{
-		element: EditInfo,
-		path: "/EditInfo",
-	},
-];
+// import { Footer } from "Components/Footer/Footer";
+import { Footer } from "Components/Footer/Footer";
+// export const routes = [
+// 	{
+// 		element: ActivitySideBar,
+// 		path: "/ActivitySideBar",
+// 	},
+// 	{
+// 		element: Inbox,
+// 		path: "/Inbox",
+// 	},
+// 	{
+// 		element: HojrehManager,
+// 		path: "/HojrehManager",
+// 	},
+// 	{
+// 		element: Report,
+// 		path: "/Report",
+// 	},
+// 	{
+// 		element: Body,
+// 		path: "/",
+// 	},
+// 	{
+// 		element: Exit,
+// 		path: "/Exit",
+// 	},
+// 	{
+// 		element: Order,
+// 		path: "/Order",
+// 	},
+// 	{
+// 		element: Saved,
+// 		path: "/Saved",
+// 	},
+// 	{
+// 		element: PasswordManager,
+// 		path: "/PasswordManager",
+// 	},
+// 	{
+// 		element: Report,
+// 		path: "/Report",
+// 	},
+// 	{
+// 		element: ConnectedDevises,
+// 		path: "/ConnectedDevises",
+// 	},
+// 	{
+// 		element: EditInfo,
+// 		path: "/EditInfo",
+// 	},
+// ];
 
 const App = () => {
 	return (
 		<div>
-			<Body />
+			<Footer />
 		</div>
 	);
 };

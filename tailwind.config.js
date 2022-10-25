@@ -11,7 +11,9 @@ module.exports = {
 		transparent: "transparent",
 		current: "currentColor",
 		BlueCustom: "#0D61A4",
-		DarkGrayCustom: "#73777F",
-		LightGrayCustom: "#D2D2D2",
+		DarkGrayCustom: "#31373D",
+		LightGrayCustom2: "#D2D2D2",
+		LightGrayCustom1: "#F3F3F3",
+		RedCustom: "#BA1A1A",
 	},
 };
