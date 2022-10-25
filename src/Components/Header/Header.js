@@ -1,7 +1,7 @@
 import React from "react";
 // import { MagnifySearch } from "./SVGIconSearch/SVGIconSearch";
 import "assets/styles/index.css";
-
+import { MenuHeaderLeft, MenuHeaderRight } from "./TitleHeader";
 export const Header = () => {
 	return (
 		<div className="flex-row-reverse">
@@ -36,8 +36,16 @@ export const Header = () => {
 						className="lg:h-[55.78px] lg:w-[150px]"
 					></img>
 					<div id="2-2">
-						<div id="2-2-l"></div>
-						<div id="2-2-r"></div>
+						<div id="2-2-l">
+							{MenuHeaderLeft.map((item) => {
+								<button> {item.name}</button>;
+							})}
+						</div>
+						<div id="2-2-r">
+							{MenuHeaderRight.map((item) => {
+								<button> {item.name}</button>;
+							})}
+						</div>
 					</div>
 				</div>
 			</div>

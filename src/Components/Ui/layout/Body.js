@@ -9,8 +9,6 @@ export const Body = () => {
 		<div>
 			<Header />
 			<div className="flex ">
-				<Report />
-				<ActivitySideBar />
 				<Footer />
 			</div>
 		</div>
